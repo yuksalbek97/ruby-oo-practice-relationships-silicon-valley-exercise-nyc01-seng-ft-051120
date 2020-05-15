@@ -30,4 +30,9 @@ class Startup
             start_up.domain
         end
     end
+
+    def sign_contract(type, investment, venture_capitalist)
+        FundingRound.new(type, investment, self, venture_capitalist) 
+    end
+
 end
